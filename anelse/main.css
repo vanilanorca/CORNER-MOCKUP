@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #002B49;
+    color: white;
+}
+
+header {
+    background-color: black;
+    margin: 0;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mediaContainer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#videoContainer {
+    margin-top: 20px;
+}
+
+#mask {
+    position: absolute;
+    width: 1174px;
+    height: 587px;
+    display: flex;
+    overflow: hidden;
+}
+
+#videoPreview{
+    z-index: 999;
+    width: 320px;
+    height: 40px;
+}
+
+/* Estilos para layout das faixas */
+#mediaContainer {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    height: 36px;
+    overflow: hidden;
+}
+
+.mediaSection {
+    width: 24%; /* Cada faixa ocupa um quarto da largura */
+    overflow: hidden;
+    background: rgb(0, 251, 255);
+}
+
+#media2{ margin-top: -36px; }
+#media3{ margin-top: -72px; }
+#media4{ margin-top: -108px; }
+
+video, img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    width: 100%;
+    font-size: 12px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
