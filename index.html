@@ -4,34 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corner Mockup</title>
+    <title>Mockup Icônicos</title>
     <link rel="stylesheet" href="main.css">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #002B49;
+            color: white;
+        }
+
+        header {
+            background-color: black;
+            margin: 0;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .button {
+            background: #FFFFFF;
+            color: #000;
+            text-decoration: none;
+            padding: 15px 25px;
+            border-radius: 6px;
+            margin-top: 40px;
+            font-weight: bold;
+            transition: all .3s;
+            box-shadow: 5px 5px 10px #000;
+        }
+
+        .button:hover {
+            background: #000;
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 15px 25px;
+            border-radius: 6px;
+            margin-top: 40px;
+            font-weight: bold;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: black;
+            width: 100%;
+            font-size: 12px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
 </head>
 
 <body>
 
     <header>
-        <h1>Mockup Corner Luz</h1>
+        <h1>Mockup Icônicos</h1>
     </header>
 
     <div class="container">
-        
-        <form id="uploadForm" action="/upload" method="POST" enctype="multipart/form-data">
-            <input type="file" name="videoFile" accept="video/*" required>
-        </form>
-
-        <div id="videoContainer" style="display:none;">
-            <div id="mask">
-                <div id="esquerda"></div>
-                <div id="curva"></div>
-                <div id="direita"></div>
-            </div>
-
-            <video id="videoPreview" controls width="1176" height="216" style="display:none;">
-                <source id="videoSource" src="" type="video/mp4">
-                Seu navegador não suporta o elemento de vídeo.
-            </video>
-        </div>
+        <a class="button" href="corner/index.html">Corner - LUZ</a>
+        <a class="button" href="column/index.html">LED COLUMN - Pinheiros</a>
     </div>
 
     <footer>

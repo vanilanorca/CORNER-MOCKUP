@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corner Mockup</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="../home.png" alt="" style="filter: invert(1); width: 30px; position: absolute; left: 40px; top: 20px;">
+        </a>
+        <h1>Corner Luz - Mockup</h1>
+    </header>
+
+    <div class="container">
+        <form id="uploadForm" action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="mediaFile" accept="video/*,image/*" required>
+        </form>
+
+        <div id="mediaContainer" style="display:none;">
+            <div id="mask">
+                <div id="esquerda"></div>
+                <div id="curva"></div>
+                <div id="direita"></div>
+            </div>
+
+            <video id="videoPreview" controls width="1176" height="216" style="display:none;">
+                <source id="videoSource" src="" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+
+            <img id="imagePreview" width="1176" height="216" style="display:none;">
+        </div>
+    </div>
+
+    <footer>
+        <p>Vinicius Lopes Alves</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+
+</html>

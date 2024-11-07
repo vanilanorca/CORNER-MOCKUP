@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED COLUMN Pinheiros - Mockup</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="../index.html">
+            <img src="../home.png" alt="" style="filter: invert(1); width: 30px; position: absolute; left: 40px; top: 20px;">
+        </a>
+        <h1>LED COLUMN Pinheiros - Mockup</h1>
+    </header>
+
+    <div class="container">
+        <form id="uploadForm" action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="mediaFile" accept="video/*,image/*" required>
+        </form>
+
+        <div id="mediaContainer" style="display:none;">
+            <div id="mask">
+                <div id="bloco1"></div>
+                <div id="bloco2"></div>
+                <div id="bloco3"></div>
+                <div id="bloco4"></div>
+                <div id="bloco5"></div>
+            </div>
+
+            <video id="videoPreview" controls width="640" height="384" style="display:none;">
+                <source id="videoSource" src="" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+
+            <img id="imagePreview" width="640" height="384" style="display:none;">
+        </div>
+
+        <div id="plantaContainer">
+            <img id="imagemPlanta" src="planta.png" alt="Planta de medidas em px*" title="Planta de medidas em px*">
+            <span id="imagemPlantaClose">+</span>
+        </div>
+    </div>
+
+    <footer>
+        <p>Vinicius Lopes Alves</p>
+    </footer>
+
+    <script src="column.js"></script>
+
+</body>
+
+</html>
